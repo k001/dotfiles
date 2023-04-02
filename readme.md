@@ -7,14 +7,20 @@ La idea de este repo es que sea drop-in replacement
 cd
 git clone git@github.com:ZeroDragon/dotfiles.git
 
-rm -rf .byobu
-ln -s dotfiles/.byobu .byobu
-
 rm .vimrc
 ln -s dotfiles/.vimrc .vimrc
 
 rm .zshrc
 ln -s dotfiles/.zshrc .zshrc
+
+rm .tmux.conf
+ln -a dotfiles/tmux.conf .tmux.conf
+
+rm .gitconfig
+ln -a dotfiles/gitconfig .gitconfig
+
+rm .hammerspoon/init.lua
+ln -a dotfiles/init.lua .hammerspoon/init.lua
 ```
 
 wTerminal.json sirve para configurar la windows terminal.  
